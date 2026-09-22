@@ -6,5 +6,7 @@ export const CONTADOR_TEXT = {
     MIN_VALUE: 0,
     INCREMENT_VALUE: 1,
     DECREMENT_VALUE: 1,
-    TITLE: 'Contador React'
+    TITLE: 'Contador React',
+    PLACEHOLDER_NAME: 'Escriba su nombre',
+    PLACEHOLDER_EDAD: 'Escriba su edad'
 }

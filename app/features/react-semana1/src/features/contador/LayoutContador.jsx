@@ -5,7 +5,7 @@ import { Contador3 } from "./contador3/contador3.jsx";
 import { CONTADOR_TEXT } from "./constants/contador.constants.js";
 
 export function LayoutContador() {
-  const [counter, setContador] = useState(
+  const [contador, setContador] = useState(
     CONTADOR_TEXT.MIN_VALUE
   );
 
@@ -25,16 +25,16 @@ export function LayoutContador() {
   return (
     <>
       <Contador1
-        counter={counter}
-        setCount={setContador}
+        contador={contador}
+        setContador={setContador}
       />
       <Contador2
-        count={counter}
-        setCount={setContador}
+        contador={contador}
+        setContador={setContador}
       />
       <Contador3
-        count={counter}
-        setCount={setContador}
+        contador={contador}
+        setContador={setContador}
       />
     </>
   );

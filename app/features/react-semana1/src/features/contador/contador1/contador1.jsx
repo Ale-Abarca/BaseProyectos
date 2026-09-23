@@ -1,17 +1,17 @@
 import useContador from "../hooks/useContador.js";
 import { CONTADOR_TEXT } from "../constants/contador.constants.js";
 
-export function Contador1({ counter, setCount }) {
+export function Contador1({ contador, setContador }) {
   const { handleIncrement, handleDecrement } =
-    useContador(setCount);
+    useContador(setContador);
 
   return (
     <>
       <h2>Contador React</h2>
-      <p>{counter}</p>
+      <p>{contador}</p>
       <button
         onClick={
-          counter < CONTADOR_TEXT.MAX_VALUE
+          contador < CONTADOR_TEXT.MAX_VALUE
             ? handleIncrement
             : null
         }
@@ -20,7 +20,7 @@ export function Contador1({ counter, setCount }) {
       </button>
       <button
         onClick={
-          counter > CONTADOR_TEXT.MIN_VALUE
+          contador > CONTADOR_TEXT.MIN_VALUE
             ? handleDecrement
             : null
         }

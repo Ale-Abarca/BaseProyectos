@@ -1,7 +1,7 @@
-import { CONTADOR_TEXT } from "../constants/contador.constants"
+import { CONTADOR_TEXT } from "../constants/contador.constants.js"
 import useContador from "../hooks/useContador.js"
 import { useState } from "react"
-import users from "../hooks/users"
+import users from "../hooks/users.js"
 
 export function Contador3({ contador, setContador }) {
 
@@ -27,7 +27,10 @@ export function Contador3({ contador, setContador }) {
                 value={edad}
                 onChange={(e) => handleinputChange(e, setEdad)}
             />
-            <button onClick={() => { handleIncrement }} disabled={nombre === "" || edad === ""}>
+            {/* <button onClick={() => { handleIncrement }} disabled={nombre === "" || edad === ""}>
+                {CONTADOR_TEXT.INCREMENT}
+            </button> */}
+            <button onClick={() => handleIncrement()}>
                 {CONTADOR_TEXT.INCREMENT}
             </button>
         </>
